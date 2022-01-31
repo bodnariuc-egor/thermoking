@@ -16,6 +16,12 @@
     font-display: swap;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -46,6 +52,8 @@ body {
     flex: 1 1 auto;
 }
 
+/* Header styles */
+
 .header {
     background-color: #171717;
     height: 72px;
@@ -68,6 +76,18 @@ body {
 .header__logo img {
     width: 260px;
     height: 35px;
+}
+
+@media (max-width: 400px) {
+    .header__logo {
+        width: 200px;
+        height: 27px;
+    }
+    
+    .header__logo img {
+        width: 200px;
+        height: 27px;
+    }
 }
 
 .nav {
@@ -141,6 +161,93 @@ body {
         display: none;
     }
 }
+
+/* Main styles */
+
+.intro {
+    background-image: linear-gradient(to right, #171717 5%, #17171700) , url('../img/thermo_king_main_background.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.intro__container {
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro__content {
+    max-width: 730px;
+    color: white;
+}
+
+.intro__title {
+    font-weight: bold;
+    font-size: 3.2em;
+    line-height: 1.3em;
+    padding-bottom: 16px;
+}
+
+.intro__subtitle {
+    padding-bottom: 32px;
+}
+
+@media (max-width: 1110px) {
+    .intro__container {
+        padding: 0 1rem;
+    }
+
+    .intro__title {
+        font-size: 2.8em;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro__content {
+        max-width: 80%;
+    }
+    .intro__title {
+        font-size: 2.2em;
+    }
+
+    .intro__subtitle {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 640px) {
+    .intro__title {
+        font-size: 1.8em;
+    }
+
+    .intro__subtitle {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 535px) {
+    .intro__container {
+        height: 65vh;
+    }
+
+    .intro__content {
+        max-width: 90%;
+    }
+    
+    .intro__title {
+        font-size: 1.5em;
+    }
+
+    .intro__subtitle {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+}
+/* Footer styles */
 
 .footer {
     background-color: #0055A4;
