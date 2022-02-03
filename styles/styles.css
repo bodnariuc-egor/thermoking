@@ -454,6 +454,16 @@ body {
     row-gap: 64px;
 }
 
+@media (max-width: 550px) {
+    .catalog__title {
+        font-size: 2em;
+    }
+
+    .product-title {
+        font-size: 1em;
+    }
+}
+
 .catalog__item {
     flex: 1 1 33.333%;
     min-width: 290px;
@@ -485,10 +495,111 @@ body {
 }
 
 .product-title {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.3em;
     font-weight: bold;
 }
+
+#product-2 {
+    margin-top: -50px;
+}
+
+#product-3 {
+    margin-top: -110px;
+}
+
+#product-5 {
+    margin-top: -65px;
+}
+
+#product-8 {
+    margin-top: -100px;
+}
+
+#product-9 {
+    margin-top: -95px;
+}
+
+/* Clients styles */
+
+.clients {
+    background-color: #F4F5F7;
+}
+
+.clients__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 59px 0;
+    align-items: center
+}
+
+@media (max-width: 1110px) {
+    .clients__container {
+        padding: 59px 1rem 59px 1rem;
+    }
+}
+
+.clients__title {
+    font-size: 2.7em;
+    line-height: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.clients__subtitle {
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 550px) {
+    .clients__title {
+        font-size: 2em;
+        line-height: 1em;
+    }
+    .clients__subtitle {
+        font-size: 16px;
+    }
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 24px;
+}
+
+.clients__card {
+    width: 170px;
+    height: 96px;
+    background-color: white;
+    box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+    border-radius: 16px;
+    margin: 0px 12px;
+    text-align: center;
+    line-height: 96px;
+}
+
+@media (max-width: 438px) {
+    .clients__card {
+        margin: 0px 6px;
+        width: 142px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .clients__card--image {
+        max-width: 125px;
+        max-height: 64px;
+        padding: 8px 8px;
+    }
+}
+
+.clients__card--image {
+    vertical-align: middle;
+}
+
 /* Footer styles */
 
 .footer {
