@@ -18,14 +18,14 @@
                     <a href="index.html" class="header__logo"><img src="img/thermoking_logo_pn.png" alt="Логотип Thermo King"></a>
                     <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                        <li class="nav__item"><a href="#company" class="nav__link">О компании</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
                     </ul>
                     </nav>
                     <ul class="nav-actions">
-                        <li class="nav-actions__item"><a href="" class="button">078 144 546</a></li>
+                        <li class="nav-actions__item"><a href="tel:+37378144546" class="button">078 144 546</a></li>
                         <li class="nav-actions__item--rounded"><a href="index-ro.html" class="nav__link">Ru</a></li>
                     </ul>
                 </div>
@@ -37,14 +37,14 @@
                         <div class="intro__content">
                             <h1 class="intro__title">Официальный дилер Thermo King в Молдове</h1>
                             <p class="intro__subtitle">Транспортные системы контроля температуры для грузовиков, прицепов, судовых контейнеров и железнодорожных вагонов.</p>
-                            <a href="" class="button">Контакты</a>
+                            <a href="tel:+37378144546" class="button">Контакты</a>
                         </div>
                     </div>
                 </section>
 
                 <section class="about">
                     <div class="about__container">
-                        <h2 class="visually-hidden">О компании</h2>
+                        <h2 class="visually-hidden" id="company">О компании</h2>
                         <div class="about__item">
                             <h3 class="item__title">Более 26 лет на рынке</h3>
                             <p class="item__subtitle">холодильного оборудования</p>
@@ -91,7 +91,7 @@
                     </div>
                 </section>
 
-                <section class="services">
+                <section class="services" id="services">
                     <div class="services__container">
                         <div class="services__image">
                             <img src="img/truck_thermoking_services-min.png" alt="Грузовик, оборудованный холодильником Thermo King">
@@ -112,7 +112,7 @@
                     </div>
                 </section>
 
-                <section class="catalog">
+                <section class="catalog" id="catalog">
                     <div class="catalog__container">
                         <h2 class="catalog__title">Каталог оборудования</h2>
                         <div class="catalog__item">
@@ -192,7 +192,7 @@
 
                 <section class="clients">
                     <div class="clients__container">
-                        <h1 class="clients__title">Наши клиенты</h1>
+                        <h2 class="clients__title">Наши клиенты</h2>
                         <p class="clients__subtitle">Мы сотрудничаем более чем с 70 компаниями по всей Молдове.</p>
                         <div class="clients__list">
                             <div class="clients__card">
@@ -244,8 +244,47 @@
                     </div>
                 </section>
 
+                <section class="contacts" id="contacts">
+                    <div class="contacts__container">
+                        <div class="contacts__card">
+                            <div class="contacts__details">
+                                <h2 class="contacts__title">Контакты</h2>
+                                <ul class="contacts__list">
+                                    <li class="contacts__list--item">
+                                        <img src="img/add_location.png" alt="Иконка локации" class="contacts__list--image">
+                                        <p class="item__text">Кишинёв, ул. Каля Ешилор 36</p>
+                                    </li>
+                                    <li class="contacts__list--item">
+                                        <img src="img/phone_callback.png" alt="Иконка стационарного телефона" class="contacts__list--image">
+                                        <p class="item__text"><a href="tel:+3732286282">022 86282</a></p>
+                                    </li>
+                                    <li class="contacts__list--item">
+                                        <img src="img/stay_current_portrait.png" alt="Иконка мобильного телефона" class="contacts__list--image">
+                                        <p class="item__text"><a href="tel:+37378144546">078 144 546</a></p>
+                                    </li>
+                                    <li class="contacts__list--item">
+                                        <img src="img/local_post_office.png" alt="Иконка E-mail" class="contacts__list--image">
+                                        <p class="item__text"><a href="mailto:office@thermoking.md">office@thermoking.md</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts__map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4672.758025035794!2d28.79332230776287!3d47.04214609478268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d92f3f03ab3%3A0x1329e3f16613ffc9!2z0YPQuy4g0JrQsNC70Y8g0JXRiNC40LvQvtGAIDM2LCBDaGnImWluxIN1LCDQnNC-0LvQtNCw0LLQuNGP!5e0!3m2!1sru!2s!4v1643886277712!5m2!1sru!2s" class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </main>
-            <footer class="footer"></footer>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__content">
+                        <h2 class="footer__title">Остались вопросы?<br>Свяжитесь с нами.</h2>
+                        <a href="tel:+37378144546" class="button button--white">078144546</a>
+                        <p class="copywright">© 2022 Thermo King. Все права защищены.</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
