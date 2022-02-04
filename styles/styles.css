@@ -672,6 +672,7 @@ body {
 
 .contacts__list--item {
     display: flex;
+    align-items: center;
 }
 
 .contacts__list--item:not(:last-child) {
@@ -689,9 +690,9 @@ body {
     color: white;
 }
 
-.item__text:hover {
+.contacts__a:hover {
     transition: all 0.3s ease 0s;
-    transform: scale(1.1);
+    color: #032443;
 }
 
 .contacts__map {
