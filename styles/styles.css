@@ -121,13 +121,31 @@ body {
     margin-right: 25px;
 }
 
-.nav-actions__item--rounded {
+/* .nav-actions__item--rounded {
     border: 1px solid #FFFFFF;
     padding: 6px 12px;
     border-radius: 6px;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 18px;
+} */
+
+.nav__link--lang {
+    border: 1px solid #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav__link--lang:hover {
+    border: 1px solid #0090DD;
+    color: #0090DD;
+    background-color: white;
 }
 
 .button {
@@ -262,7 +280,7 @@ body {
     }
 }
 
-@media (max-width: 542px) {
+@media (max-width: 560px) {
     .about__container {
         justify-content: flex-start;
     }
@@ -783,6 +801,53 @@ body {
 @media (max-width: 550px) {
     .footer__title {
         font-size: 1.5em;
+    }
+}
+
+.call--mobile {
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+    display: none;
+}
+
+.call__icon {
+    width: 60px;
+    height: 60px;
+    animation: myAnim 2s ease 5s 3 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+      transform-origin: center center;
+    }
+  
+    10% {
+      animation-timing-function: ease-in;
+      transform: scale(0.91);
+    }
+  
+    17% {
+      animation-timing-function: ease-out;
+      transform: scale(0.98);
+    }
+  
+    33% {
+      animation-timing-function: ease-in;
+      transform: scale(0.87);
+    }
+  
+    45% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+    }
+  }
+
+@media (max-width: 800px) {
+    .call--mobile {
+        display: block;
     }
 }
 
