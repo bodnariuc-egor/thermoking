@@ -306,79 +306,65 @@ body {
     font-size: 16px;
 }
 
-/* Brands section styles */
+/* Certification section styles */
 
-.brands__container {
+.certification__container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 0 0 93px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 0 64px 0;
 }
 
 @media (max-width: 1110px) {
-    .brands__container {
+    .certification__container {
         padding: 0px 1rem 93px 1rem;
     }
 }
 
-.brands__subtitle {
-    width: 100%;
+.certification__image {
+    width: 337px;
+    height: 338px;
+    margin-right: 20px;
 }
 
-.brands__item {
-    width: 540px;
-    height: 169px;
-    margin-top: 36px;
+.certification__content {
+    max-width: 725px;
 }
 
-.brands__item--image {
-    width: auto;
-    max-height: 77px;
+.certification_title {
+    font-size: 2.2em;
+    line-height: 1.1em;
+    margin-bottom: 14px;
 }
 
-.brands__item--text {
+.certification__p {
     font-size: 16px;
     line-height: 26px;
 }
 
-.brands__item:nth-child(odd) {
-    margin-right: 30px;
-}
-
-@media (max-width: 1110px) {
-    .brands__item {
-        width: auto;
-        height: auto;
-        max-width: 400px;
-        /* margin-right: 20px; */
+@media (max-width: 780px) {
+    .certification__container {
+        flex-direction: column;
+        align-items: flex-start;
     }
-}
-
-@media (max-width: 870px) {
-    .brands__item {
-        max-width: 350px;
-    }
-    .brands__item--image {
-        max-height: 70px;
-    }
-}
-
-@media (max-width: 775px) {
-    .brands__item {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 380px) {
-    .brands__item--image {
-        max-height: 50px;
-    }
-    .brands__item--text {
-        font-size: 14px;
-    }
-    .brands__item:nth-child(odd) {
+    .certification__image {
+        width: 220px;
+        height: 220px;
         margin-right: 0px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .certification_title {
+        font-size: 1.5em;
+    }
+
+    .certification__p {
+        font-size: 14px;
+        line-height: 24px;
     }
 }
 
